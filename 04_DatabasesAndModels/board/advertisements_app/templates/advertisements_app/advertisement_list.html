@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if advertisement_list %}
+<ul>
+ {% for advertisement in advertisement_list%}
+    <li>
+         <a href= {% url 'advertisement-detail' advertisement.id %}>{{advertisement.title}} </a>
+
+    </li>
+    {%endfor%}
+    </ul>
+   {%else%}
+dd
+{%endif%}
+
+
+
+
+
+</ul>
+
+</body>
+</html>

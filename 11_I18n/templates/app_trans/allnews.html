@@ -1,0 +1,40 @@
+{% extends "app_trans/super_trans.html" %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+{% block title %}
+{% trans "all news" %}
+{% endblock %}
+{% block content %}
+{% for news in allnews%}
+    <li>
+
+         <a href= {% url 'edit-detail' news.id %}>{{news.name}},{{news.like}} </a>
+
+    </li>
+ <li>
+
+     {{news.description}}
+
+    </li>
+    {%endfor%}
+
+<a href={% url 'alnewss' %}>{% trans "Create news" %}</a>
+<a href={% url 'login' %}>{% trans "login" %}</a>
+<a href={% url 'logout' %}>{% trans "logout" %}</a>
+<a href={% url 'register' %}>{% trans "register" %}</a>
+
+
+
+
+{% endblock %}
+
+</body>
+</html>

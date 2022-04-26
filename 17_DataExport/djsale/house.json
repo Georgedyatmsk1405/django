@@ -1,0 +1,1 @@
+[{"model": "app_houses.house", "pk": 1, "fields": {"title": "ulica 1", "description": "asd", "komnat": 1, "type": 1, "is_published": false, "published_at": "2022-04-19T08:57:50Z"}}, {"model": "app_houses.house", "pk": 2, "fields": {"title": "ulica 2 kv1", "description": "sdasdasd", "komnat": 6, "type": 2, "is_published": true, "published_at": "2022-04-19T08:58:02Z"}}]

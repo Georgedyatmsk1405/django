@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+<a href="edit/">Редактировать новость</a>
+
+<li>{{newss.name}}  Зарегестрированный пользователь  {{newss.user}}</li>
+ <li>Описание  {{newss.description}}</li>
+
+  <li>ТЕГ {{newss.teg}}</li>
+
+ {%for file in files%}
+<img src={{MEDIA_URL}}{{file.file.url}} alt="connect" style="max-height:300px">
+  {% endfor %}
+
+
+
+</body>
+</html>

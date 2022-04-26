@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form  method="POST">
+       {% csrf_token %}
+            <input id="myInput" type="text" placeholder="Введите " name="balance">
+            <button type="submit" class="input_button" value="submit">Пополнить баланс</button>
+ </form>
+{{balance}},<br> статус-{{status}} <br>
+Сумма покупки-{{sum_of_buying}}
+<br>
+<a href= "{% url 'addproduct'  %}">Посмотреть товары</a>
+<a href= "{% url 'history'  %}">История покупок</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ {% for advertisement in advertisements%}
+
+        {{advertisement.title}} (цена: {{advertisement.price}}).руб
+
+            рубрика: {{advertisement.rubrika}}
+ контакт {{advertisement.contact}}
+
+
+{%endfor%}
+
+
+
+</body>
+</html>

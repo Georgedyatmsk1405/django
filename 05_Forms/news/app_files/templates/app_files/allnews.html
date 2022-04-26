@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends "app_files/base.html" %}
+
+{% block title %}
+Все новости
+{% endblock %}
+{% block content %}
+{% for news in allnews%}
+    <li>
+
+         <a href= {% url 'news-detail' news.id %}>{{news.name}},{{news.user}} </a>
+
+    </li>
+ <li>
+
+     {{news.description}}
+
+    </li>
+    {%endfor%}
+
+<a href="/create">Создать новость</a>
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+</body>
+</html>
+

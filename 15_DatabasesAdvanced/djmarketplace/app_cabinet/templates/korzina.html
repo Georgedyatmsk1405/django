@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in product %}
+<li>{{i.name}}, {{i.price}} </li>
+{%endfor%}
+сумма покупки--{{sum_of_buying}}
+<br>
+Ваш баланс-{{balance}}
+
+ <form  method="POST">
+       {% csrf_token %}
+            <button type="submit" value="submit">Купить</button>
+ </form>
+</body>
+</html>

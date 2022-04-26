@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     {%for item in add%}
+         <li>{{item}}</li>
+    {% endfor %}
+      {{c}}
+    {{isok}}
+    {{cc}}
+<form  method="post">
+    {% csrf_token %}
+    <input id="your_name" type="text" name="your_name" value="{{isok}}">
+    <input type="submit" value="OK">
+</form>
+</head>
+<body>
+
+</body>
+</html>
+

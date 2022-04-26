@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-04 19:18+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\app_panel\apps.py:6
+msgid "pane"
+msgstr "панель"
+
+#: .\app_panel\models.py:8 .\app_panel\models.py:17 .\app_panel\models.py:21
+msgid "name"
+msgstr "имя"
+
+#: .\app_panel\models.py:9 .\app_panel\models.py:18 .\app_panel\models.py:22
+msgid "description"
+msgstr "описание"
+
+#: .\app_panel\models.py:13
+msgid "historys"
+msgstr ""
+
+#: .\app_panel\models.py:14
+msgid "history"
+msgstr ""
+
+#: .\app_panel\templates\app_panel\panel.html:20
+msgid "make purchase"
+msgstr "совершить покупку"
+
+#: .\app_panel\templates\app_panel\panel.html:24
+msgid "History"
+msgstr "история покупок"
+
+#: .\app_panel\templates\app_panel\panel.html:31
+msgid "actions"
+msgstr "акции"
+
+#: .\app_panel\templates\app_panel\panel.html:36
+msgid "sugestions"
+msgstr "предложения"
+
+#: .\app_panel\templates\app_panel\start.html:16
+#: .\templates\app_panel\start.html:9
+msgid "logout"
+msgstr "выход"
+
+#: .\app_panel\templates\app_panel\start.html:17
+#: .\templates\app_panel\start.html:10
+msgid "panel"
+msgstr "панель лояльности"
+
+#: .\app_panel\templates\app_panel\start.html:19
+#: .\templates\app_panel\start.html:12
+msgid "register"
+msgstr "регистрация"
+
+#: .\app_panel\templates\app_panel\start.html:20
+#: .\templates\app_panel\start.html:13
+msgid "login"
+msgstr "логин"
+
+#: .\app_panel\templates\app_panel\super_trans.html:10
+msgid "Translated text."
+msgstr "переведенный текст"
+
+#: .\app_panel\templates\app_panel\super_trans.html:18
+msgid "Welcome to our page"
+msgstr "Добро пожаловать"

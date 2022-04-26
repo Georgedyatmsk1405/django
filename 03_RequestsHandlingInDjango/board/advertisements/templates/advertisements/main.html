@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form action="main" method="get">
+   <p><select size="3" multiple name="hero">
+       {%for item in region%}
+         <option>{{item}}</option>
+    {% endfor %}
+
+     </select></p>
+     <p><select size="3" multiple name="hero">
+       {%for item in kategori%}
+         <option>{{item}}</option>
+    {% endfor %}
+<input type="text" name="weight">
+     </select></p>
+   <p><input type="submit" value="Отправить"></p>
+ </form>
+</body>
+</html>

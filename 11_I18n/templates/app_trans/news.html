@@ -1,0 +1,29 @@
+{% extends "app_trans/super_trans.html" %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+{% block title %}
+
+{% endblock %}
+{% block content %}
+
+
+<h2>{% trans "Create news" %}</h2>
+<form method="post" action= {% url 'alnewss' %}  enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <button type="submit">{% trans "add" %}</button>
+</form>
+
+
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if advertisement in advertisements%}
+<ul>
+ {% for advertisement in advertisements%}
+    <li>
+        {{advertisement.title}} (цена: {{advertisement.price}}).руб
+        <p>
+            рубрика: {{advertisement.rubrika}}
+
+    </li>
+{%endfor%}
+
+
+</ul>
+{%else%}
+<p>объявлений нет</p>
+{%endif%}
+</body>
+</html>

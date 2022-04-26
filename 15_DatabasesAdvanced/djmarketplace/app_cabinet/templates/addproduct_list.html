@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in list_of_products%}
+<li>{{i.name}},{{i.price}},{% for microi in i.magasine.all %}{{ microi.magasine_name }}{% endfor %} <form action="{% url 'addproduct'  %}"  method="post"> {% csrf_token %}
+    <input type="submit" name="{{i.id}}" value="добавить в корзину"></form></li>
+{%endfor%}
+<a href= "{% url 'buy'  %}">Перейти в корзину</a>
+</body>
+</html>

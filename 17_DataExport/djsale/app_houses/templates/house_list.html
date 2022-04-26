@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Список жилья
+{% if house_list %}
+<ul>
+ {% for advertisement in house_list%}
+    <li>
+         <a href= {% url 'house-detail' advertisement.id %}>{{advertisement.title}} </a>
+
+    </li>
+    {%endfor%}
+    </ul>
+   {%else%}
+dd
+{%endif%}
+<a href ={% url 'kontact' %}>kontacty</a>
+<a href ={% url 'onas' %}>onas</a>
+<a href ={% url 'rss' %}>rss</a>
+
+
+
+
+
+</ul>
+
+</body>
+</html>

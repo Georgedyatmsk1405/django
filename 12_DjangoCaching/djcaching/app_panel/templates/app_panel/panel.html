@@ -1,0 +1,48 @@
+{% extends "app_panel/super_trans.html" %}
+{% load i18n %}
+{% load cache %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% block title %}
+
+{% endblock %}
+{% block content %}
+
+<form method="post" action= {% url 'panel' %}>
+    {% csrf_token %}
+    {{ form.as_p}}
+    <button type="submit">{% trans "make purchase" %}</button>
+</form>
+
+
+<ul>{% trans "History" %}</ul>
+{%cache 500 Footer%}
+{% for his in history%}
+<li>{{his.name}}</li>
+{%endfor%}
+{%endcache%}
+
+<br>
+<ul>{% trans "actions" %}</ul>
+{%cache 500 actions_cache_key%}
+{% for act in actions_cache_key%}
+<li>{{act.name}}</li>
+{%endfor%}
+{%endcache%}
+<br>
+<ul>{% trans "sugestions" %}</ul>
+{%cache 500 sugestions_cache_key%}
+{% for sug in sugestions_cache_key%}
+<li>{{sug.name}}</li>
+{%endfor%}
+{%endcache%}
+
+{% endblock %}
+</body>
+</html>

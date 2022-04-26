@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% extends "app_files/base.html" %}
+{% block title %}The current time{% endblock %}
+{% block content %}
+
+<h2>создание новости</h2>
+
+
+<form method="post" action="/filecreate/" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ specialform.as_p}}
+    <button type="submit">добавить новость</button>
+</form>
+{% endblock %}
+
+</body>
+</html>
